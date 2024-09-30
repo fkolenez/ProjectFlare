@@ -6,8 +6,6 @@ include_once('header.php');
     .centro {
         display: flex;
         justify-content: center;
-
-
     }
 
     .card {
@@ -16,8 +14,6 @@ include_once('header.php');
         justify-content: center;
         height: 420px;
     }
-    
-
 </style>
 
 <div class="container espacoTop">
@@ -31,7 +27,7 @@ include_once('header.php');
                     </div>
 
                     <div class="centro">
-                       <a href="MonkeyMoney.php"> <button class="play-btn">Play</button></a>
+                       <a href="MonkeyMoney.php"> <button class="play-btn">Play!</button></a>
                     </div>
                 </div>
             </div>
@@ -42,7 +38,7 @@ include_once('header.php');
                 <div class="card-body">
                     <div class="centro">
                         <form action="games/MMVerificacao.php">
-                            <a href="#"> <button class="play-btn">Play</button></a>
+                            <a href="#"><button class="play-btn">Play!</button></a>
                         </form>   
                     </div>
                 </div>
@@ -56,7 +52,7 @@ include_once('header.php');
                     <h1></h1>
 
                     <div class="centro">
-                        <a href="MonkeyMoney.php" class="btn btn-primary">Clique para jogar!</a>
+                        <a href="#"> <button class="play-btn">Play!</button></a>
                     </div>
                 </div>
             </div>

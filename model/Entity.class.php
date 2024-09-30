@@ -24,8 +24,6 @@
             
             $data['profile'] = 'Jogador';
 
-            
-
             $campos = implode(", ", array_keys($data));
             $valores = ":".implode(", :", array_keys($data));
 
@@ -62,8 +60,7 @@
             $statement->execute();
         }
 
-        public function getInfo($table, $id)
-        {
+        public function getInfo($table, $id){
             $pdo = parent::getInstance();
             $sql = "SELECT * FROM $table WHERE id = :id";
             $statement = $pdo->prepare($sql);

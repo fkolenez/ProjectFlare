@@ -37,7 +37,6 @@ $empEntity = new Entity();
             </thead>
 
             <tbody>
-
                 <?php foreach ($empEntity->list("users") as $emp) { ?>
 
                     <tr>
