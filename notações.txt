@@ -1,0 +1,14 @@
+Tem duas pastas de crud porque:
+  >  o redirecionamento do banco é diferente pra cada crud
+  nao ache estranho :p
+
+TO DO:
+  > Colocar a logo no img do login
+  > Mudar a Fonte do login
+
+TO DO (register):
+ > Decidir se o usuario vai definir seu balanço
+ > Descobrir como faz pra registrar a data atual.
+ > Na hora do insert transformar a senha em hash,
+preciso descobrir um jeito de passar só a senha
+
