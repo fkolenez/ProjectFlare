@@ -42,31 +42,38 @@
 </head>
 
 <body class="gradient-custom">
-    <div class="loginBox">
-        <h1><b>FLARE</b></h1>
-        <h3><b>Login</b></h3>
-        <form action="../../controler/auth/auth.php" method="post">
-            <div class="inputBox">
-                <input class="inputFodase" id="uname" type="text" name="name" placeholder="Digite seu username">
-                <input id="pass" type="password" name="password" placeholder="Digite sua senha">
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="loginBox col-md-">
+            <h1 class="display-4 text-center"><b>FLARE</b></h1>
+                <h3><b>Login</b></h3>
+                <form action="../../controler/auth/auth.php" method="post">
+                    <div class="form-group">
+                        <input class="inputFodase" id="uname" type="text" name="name" placeholder="Digite seu username">
+                        </div>
+                        <div class="form-group">
+                        <input id="pass" type="password" name="password" placeholder="Digite sua senha">
+                    </div>
+        
+                    <input type="submit" class="botaoLogin">
+                </form>
+        
+                <a href="#">Esqueceu sua senha?<br></a>
+        
+                <div class="text-center">
+                    <a href="register.php">Registre-se</a>
+                </div>
+        
+                <div class="icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+        
             </div>
-
-            <input type="submit" class="botaoLogin">
-        </form>
-
-        <a href="#">Esqueceu sua senha?<br></a>
-
-        <div class="text-center">
-            <a href="register.php">Registre-se</a>
         </div>
-
-        <div class="icons">
-            <i class="fa-brands fa-google"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-discord"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-        </div>
-
     </div>
 </body>
 

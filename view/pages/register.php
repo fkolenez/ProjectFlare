@@ -1,5 +1,15 @@
+<!doctype html>
+<html lang="pt-br">
 
 <head>
+
+    <script src="https://kit.fontawesome.com/4eb7eb63c7.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,42 +41,45 @@
     <title>Flare Project</title>
 </head>
 
-<div class="container espacoTop">
-        <h2 class="text-center">Cadastro</h2>
-
-        <form method="post" action="../../controler/registerCrud/insert.php">
-            <div class="container">
-                <div class="form">
-
-                  <!-- Id / nome / Perfil / Senha / Data -->
-
+<body class="gradient-custom">
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="loginBox col-md-">
+            <h1 class="display-4 text-center"><b>FLARE</b></h1>
+                <h3><b>Sign In</b></h3>
+                <form action="../../controler/registerCrud/insert.php" method="post">
                     <div class="form-group">
-                        <label>Nome:</label>
-                        <input type="text" class="form-control" placeholder="Digite seu nome" name="name" required autofocus>
+                        <input class="inputFodase" id="uname" type="text" name="name" placeholder="Digite seu username">
+                        </div>
+                        <div class="form-group">
+                        <input id="pass" type="password" name="password" placeholder="Digite sua senha">
+                        </div>
+                        <div class="form-group">
+                        <input type="number" name="balance" placeholder="Digite um valor pra apostar">
                     </div>
-                    
-                    <div class="form-group">
-                        <label>Senha:</label>
-                        <input type="password" class="form-control" placeholder="Digite sua senha" name="password" required autofocus>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Valor para sua carteira:</label>
-                        <input type="number" class="form-control" placeholder="Digite o quanto quer apostar" name="balance" required autofocus>
-                    </div>
-
-                    <div class="form-group"> 
-                        <button class="btn btn-outline-primary">
-                            <i class='fas fa-cloud-upload-alt' style='font-size:16px; font-weight: normal;' title="Terminar registro">Terminar registro</i>
-                        </button>
-
-                        <a href="inicio.php" class="textoBtn btn btn-outline-primary m-3"><i class='fas fa-angle-left' style='font-size:24px'></i></a>
-                    </div>
+        
+                    <input type="submit" class="botaoLogin">
+                </form>
+        
+                <a href="#">Esqueceu sua senha?<br></a>
+        
+                <div class="text-center">
+                    <a href="register.php">Registre-se</a>
                 </div>
+        
+                <div class="icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+        
             </div>
-        </form>
+        </div>
     </div>
-    
+</body>
+
 <?php
-    include_once ("footer.php");
+    include_once("footer.php");
 ?>

@@ -8,6 +8,7 @@ body {
     background-position: center;
     overflow: hidden;
     background-image: url(../img/fundo.jpeg);
+    background-color: #59238F;
 }
 
 @media screen and (max-width: 600px ) {
@@ -28,17 +29,13 @@ body {
 }
 
 .loginBox {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    height: 820px;
+    margin-top: 8%;
+
     background: #ffffff;
     border-radius: 10px;
     padding: 40px;
     box-sizing: border-box;
-    color: #000000;
+    color: #18002C;
 }
 
 .user {
@@ -48,19 +45,44 @@ body {
 }
 
 h1 {
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 90px;
-    margin: 0;
-    padding: 0 0 20px;
-    color: #000000;
-    text-align: center;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 3rem; /* Tamanho padrão */
 }
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+     body{
+        background-image: none;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        background-image: none;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
 h3 {
     margin: 0;
     padding: 0 0 20px;
-    color: #000000;
+    color: #18002C;
     text-align: center;
 }
 .loginBox input {
@@ -69,12 +91,14 @@ h3 {
 }
 
 .loginBox input[type="text"],
-.loginBox input[type="password"] {
+.loginBox input[type="password"],
+.loginBox input[type="number"]{
     border-radius: 15px;
     border: 1px solid #262626;
     outline: none;
     height: 40px;
-    color: #000000 !important; 
+    width: 440px;
+    color: #18002C !important; 
     background: transparent; 
     font-size: 16px;
     padding-left: 20px;
@@ -84,13 +108,13 @@ h3 {
 
 .loginBox input[type="text"]:hover,
 .loginBox input[type="password"]:hover {
-    color: #000000; /* Garante que a cor do texto permaneça preta quando o input é focado */
+    color: #18002C; /* Garante que a cor do texto permaneça preta quando o input é focado */
     border: 1px solid #59238F;
 }
 
 .loginBox input[type="text"]:focus,
 .loginBox input[type="password"]:focus {
-    color: #000000; /* Garante que a cor do texto permaneça preta quando o input é focado */
+    color: #18002C; /* Garante que a cor do texto permaneça preta quando o input é focado */
 }
 .inputBox {
     position: relative;
@@ -152,7 +176,6 @@ a:hover {
 .fa-brands {
     font-size: 35px;
 }
-
-.inputFodase{
-    color: #000000;
-}
+.form-group{
+    width: 100%;
+margin-bottom: 0% !important;}

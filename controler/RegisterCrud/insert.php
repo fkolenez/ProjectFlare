@@ -15,6 +15,6 @@
             $_SESSION["msg_error"] = "$e";
         }
 
-        header('Location: ../../view/pages/listagem.php');
+        header('Location: ../../view/pages/login.php');
     }
 ?>
