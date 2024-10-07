@@ -12,7 +12,7 @@
 ?>
 
 <br><br>
-
+<link rel="stylesheet" href="../../assets/css/master.css" />
 <div class="centro pt-5">
     <h1>Olá,  <?php echo $vetor[0]["name"];?></h1>
 </div>
