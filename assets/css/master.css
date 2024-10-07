@@ -1,8 +1,9 @@
 body,html{
-    background-color: #afafaf;
+    background-color: #282A36;
     padding: 0px;
     margin: 0px;
     height: 1800px;
+    color: #cccccc;
 }
 a {
     color: #fff;
@@ -25,7 +26,7 @@ a:hover{
     font-weight: bold !important;
 }
 .bg-vaga-nav{
-    background: #0f7553a8!important;
+    background: #17181E!important;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #FFFFFF !important;
@@ -87,6 +88,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #44475A;
 }
 
 
