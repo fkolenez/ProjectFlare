@@ -153,3 +153,47 @@ a:hover{
     border-color: #000; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
 }
+
+.botaoBet{
+    width: 90%;
+}
+
+.paddingTesao1{
+    padding: 0 !important;
+    display: flex;
+    justify-content: start;
+}
+
+.paddingTesao2{
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.paddingTesao3{
+    padding: 0 !important;
+    display: flex;
+    justify-content: end;
+}
+
+
+.corMonkeyMoney{
+    display: flex;
+    align-items: center;
+    background-color: #381853;
+    padding: 3%;
+}
+
+.quadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

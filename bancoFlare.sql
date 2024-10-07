@@ -38,3 +38,4 @@ CREATE TABLE IF NOT EXISTS `bets` (
 
 INSERT INTO users (id, name, balance, profile, password) 
 VALUES (1, 'ADM', 0.00, 'Administrador do sistema', 'your_password');
+
