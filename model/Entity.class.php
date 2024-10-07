@@ -89,5 +89,14 @@
             $statement->bindValue(":id", $id);
             $statement->execute();
         }
+
+        public function insertBets($user_id, $game_id, $bet_amount, $result){
+            $pdo = parent::getInstance();
+            
+            $sql = "INSERT INTO bets(user_id, game_id, bet_amount, result) VALUES ($user_id, $game_id, $bet_amount, '$result')";
+           
+            $statement = $pdo->prepare($sql);
+            $statement->execute();
+        }
     }
 ?>

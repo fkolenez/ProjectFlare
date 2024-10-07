@@ -1,7 +1,11 @@
 <?php
+    include_once("../../../model/Conexao.class.php");
+    include_once("../../../model/Entity.class.php");
+    $Entity = new Entity();
+
     session_start();
 
-    $bet = $_POST['bet'];
+    $valorAposta = $_POST['bet'];
 
     if (!isset($_SESSION['loseWin'])) {
         $_SESSION['loseWin'] = '';
@@ -20,6 +24,13 @@
         $bet = $bet/2;
         $_SESSION['loseWin'] = 'Você perdeu';
         echo "<br><br>" . $_SESSION['loseWin'];
+    }
+    
+    try{
+        $Entity->insertBets($_SESSION['id'], 1, $valorAposta ,  $_SESSION['loseWin']);
+    } catch(Exception $e){
+        $_SESSION["msg_error"] = "$e";
+        echo $e;
     }
 
     header('Location: ../MonkeyMoney.php');

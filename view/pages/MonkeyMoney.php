@@ -1,5 +1,8 @@
 <?php
     include_once("header.php");
+    include_once("../../model/Conexao.class.php");
+    include_once("../../model/Entity.class.php");
+    $Entity = new Entity();
     $loseWin = $_SESSION['loseWin'];
 ?>
 <style>
@@ -34,10 +37,9 @@
             </div>
 
             <div class="row centro">
-                <?php if (isset($_SESSION['loseWin']) && !empty($_SESSION['loseWin'])){?>
-
+                <?php if(isset($_SESSION['loseWin']) && !empty($_SESSION['loseWin'])){?>
                     <?php   if($_SESSION['loseWin'] == 'Você perdeu'){ ?>
-                        <div class="alert alert-danger mt-3" id="alert"><?php echo $_SESSION['loseWin'] ?> </div>
+                        <div class="alert alert-danger mt-3" id="alert"><?php echo $_SESSION['loseWin'];?> </div>
                     <?php } else { ?>
                         <div class="alert alert-success mt-3" id="alert"><?php echo $_SESSION['loseWin']; ?> </div>
                     <?php } ?> 
@@ -47,7 +49,10 @@
                 <?php } ?>
             </div>
 
-
+             <?php foreach ($Entity->list("bets") as $b) { ?>
+                Você apostou: <?php echo $b["bet_amount"]; ?><br>
+                Resultado:  <?php echo $b["result"]; ?><br>
+            <?php } ?>
         </div>
     </form>
 </div>
