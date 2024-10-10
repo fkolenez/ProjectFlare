@@ -70,9 +70,6 @@ a:hover{
     border-color: #520906a8;
 }
 
-.espacoTop{
-    padding-top: 80px;
-}
 
 .gradient-custom {
     /* fallback for old browsers */
@@ -154,9 +151,30 @@ a:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
 }
 
-.botaoBet{
-    width: 90%;
+.botaoBet1{
+    height: 8vh;
+    width: 7vw;
+    background-color: #8F00FF;
+    font-weight: 900;
+    font-family: 'Dela Gothic One', sans-serif;
 }
+.botaoBet2{
+    height: 8vh;
+    width: 7vw;
+    background-color: #8255A8;
+    font-weight: 900;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+.botaoBet3{
+    height: 8vh;
+    width: 7vw;
+    background-color: #f3f3f3;
+    color: #AB40FF;
+    font-weight: 900;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
 
 .paddingTesao1{
     padding: 0 !important;
@@ -177,23 +195,53 @@ a:hover{
 }
 
 
-.corMonkeyMoney{
+.game{
     display: flex;
     align-items: center;
-    background-color: #381853;
+    background-color:#381853;
     padding: 3%;
+    height: 45vh;
+    width: 50vw;
+    border-radius: 10px;
 }
 
 .quadrado{
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 4rem; /* Tamanho padrão */
+    margin-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 25vw;
+    height: 35vh;
+    background-color: #18002C;
+    color: #381853;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 100%;
+    border-radius: 10px;
 }
 
 .teste{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+h5{
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 2rem; /* Tamanho padrão */
+    font-weight: 700;
+}
+
+.input_monkey{
+    background-color: #18002C;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    color: #fcfcfc;
+}
+.input_monkey::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
