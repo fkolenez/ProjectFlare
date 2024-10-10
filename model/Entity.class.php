@@ -6,7 +6,7 @@
             $pdo = parent::getInstance();
         
             // Consulta SQL
-            $sql = "SELECT * FROM $table order by id ASC";
+            $sql = "SELECT * FROM $table order by id ASC " ;
 
             //  prepara a consulta
             $statement = $pdo->query($sql);
@@ -18,6 +18,42 @@
             return $statement->fetchAll();
         }
 
+        public function listBets($table, $id){
+
+            // Conexão
+            $pdo = parent::getInstance();
+        
+            // Consulta SQL
+            $sql = "SELECT * FROM $table WHERE user_id = $id order by id ASC " ;
+
+            //  prepara a consulta
+            $statement = $pdo->query($sql);
+
+            // Executa a consulta
+            $statement->execute();
+        
+            // Retorna a tabela do banco em formato de array
+            return $statement->fetchAll();
+        }
+
+
+        public function listGames($table, $id){
+
+            // Conexão
+            $pdo = parent::getInstance();
+        
+            // Consulta SQL
+            $sql = "SELECT * FROM $table WHERE id = $id order by id ASC " ;
+
+            //  prepara a consulta
+            $statement = $pdo->query($sql);
+
+            // Executa a consulta
+            $statement->execute();
+        
+            // Retorna a tabela do banco em formato de array
+            return $statement->fetchAll();
+        }        
         // função para inserir
         public function insert($table, $data){
             $pdo = parent::getInstance();
