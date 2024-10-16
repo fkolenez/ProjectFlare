@@ -1,5 +1,5 @@
 body,html{
-    background-color: #282A36;
+    background-color: #18002C;
     padding: 0px;
     margin: 0px;
     height: 100vh;
@@ -244,12 +244,4 @@ h5{
 }
 .input_monkey::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}
-
-.espacoTop{
-    padding-top: 100px;
-}
-
-.aadsadsdsa{
-    background-color: #15ff0025;
 }

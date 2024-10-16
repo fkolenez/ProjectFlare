@@ -23,7 +23,7 @@ include_once('header.php');
                 <img class="card-img-top" src="../../assets/img/macaco.jpeg" alt="Card image cap">
                 <div class="card-body">
                     <div class="centro">
-                        <h5>MONKEY MONEY</h5>
+                        <h4>MONKEY MONEY</h4>
                     </div>
 
                     <div class="centro">
