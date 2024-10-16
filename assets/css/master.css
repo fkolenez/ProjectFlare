@@ -2,7 +2,7 @@ body,html{
     background-color: #282A36;
     padding: 0px;
     margin: 0px;
-    height: 1800px;
+    height: 100vh;
     color: #cccccc;
 }
 a {
@@ -244,4 +244,12 @@ h5{
 }
 .input_monkey::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+.espacoTop{
+    padding-top: 100px;
+}
+
+.aadsadsdsa{
+    background-color: #15ff0025;
 }

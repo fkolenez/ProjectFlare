@@ -23,6 +23,6 @@
             <span>Nome: <?php echo $vetor[0]["name"]; ?> </span><br>
             <span>Carteira: R$: <?php  echo $vetor[0]["balance"] ?> </span><br>
             <span>Perfil: <?php echo $vetor[0]["profile"]; ?> </span><br>
-        </div>
+        </div>  
     </div>
 </div>

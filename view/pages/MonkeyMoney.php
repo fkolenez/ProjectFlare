@@ -22,7 +22,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
 </style>
 
@@ -74,11 +73,6 @@
                 </div>
             </div>
         </div>
-
-             <?php foreach ($Entity->list("bets") as $b) { ?>
-                Você apostou: <?php echo $b["bet_amount"]; ?><br>
-                Resultado:  <?php echo $b["result"]; ?><br>
-            <?php } ?>
         </div>
     </form>
 </div>
