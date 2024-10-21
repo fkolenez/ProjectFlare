@@ -23,11 +23,16 @@
 
             </div>
         </div>
+        <div class="row ab">
+
+        </div>
        <div class="row sei">
-           <div class="col-md-12 centro">
-               <span class="perfil-item">Username: <?php echo $vetor[0]["name"]; ?> </span><br>
-               <span class="perfil-item">Cash: R$<?php  echo $vetor[0]["balance"] ?> </span><br>
-               <span class="perfil-item">Bio: <?php echo $vetor[0]["profile"]; ?> </span><br>
+               <span class="perfil-item">Username:  </span><br>
+               <div class="perfil-item username"><?php echo $vetor[0]["name"]; ?></div>
+               <span class="perfil-item">Cash: </span><br>
+               <div class="perfil-item username">R$ <?php  echo $vetor[0]["balance"] ?></div>
+               <span class="perfil-item">Bio: </span><br>
+               <div class="perfil-item username"><?php echo $vetor[0]["profile"]; ?> </div>
            </div>
        </div>
     </div>
