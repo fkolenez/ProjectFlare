@@ -26,10 +26,10 @@
   <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
 
   <!-- Fontawesome 5 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  <!-- GoogleFonts - OpenSans -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <!-- CSS Personalizado-->
   <link rel="stylesheet" href="../../assets/css/master.css" />
@@ -62,7 +62,7 @@
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="games.php">Jogos</a>
+            <a class="nav-link fonte" href="games.php">Jogos</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="listagem.php">Registro</a>
