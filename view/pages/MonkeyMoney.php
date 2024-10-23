@@ -18,7 +18,7 @@
         display: flex;
     }
     .espacoTop{
-        height: 100vh;
+        padding-top: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,9 +36,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 paddingTesao1"> <button class="btn botaoBet1" type="submit" value="1" name="cor"> 2x</button></div>
-                    <div class="col-md-4 paddingTesao2"><button class="btn botaoBet2" type="submit" value="2" name="cor">2x</button></div>
-                    <div class="col-md-4 paddingTesao3"><button class="btn botaoBet3" type="submit" value="3" name="cor">2x</button></div>
+                    <div class="col-md-4 col-sm paddingTesao1"> <button class="btn botaoBet1" type="submit" value="1" name="cor"> 2x</button></div>
+                    <div class="col-md-4 col-sm paddingTesao2"><button class="btn botaoBet2" type="submit" value="2" name="cor">2x</button></div>
+                    <div class="col-md-4 col-sm paddingTesao3"><button class="btn botaoBet3" type="submit" value="3" name="cor">2x</button></div>
                 </div>
 
                 <div class="row form-group mt-3">
@@ -72,9 +72,16 @@
 
                 </div>
             </div>
+            </div>
         </div>
+
+        <div> 
+                 <?php if(isset($_SESSION['negativo']) && !empty($_SESSION['negativo'])){?>                    
+                        <div class="alert alert-danger mt-3" id="alert"><?php echo $_SESSION['negativo'];?> </div>                    
+                 <?php 
+                   unset($_SESSION['negativo']); }  ?>   
+        
         </div>
-    </form>
 </div>
 
 <script>

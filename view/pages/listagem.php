@@ -32,6 +32,7 @@ $empEntity = new Entity();
                     <th>PERFIL</th>
                     <th>BALANÇO</th>
                     <th>DATA</th>
+                    <th>BIO</th>
                     <th>AÇÕES</th>
                 </tr>
             </thead>
@@ -47,6 +48,7 @@ $empEntity = new Entity();
 
                         <!-- date formata em d/m/a  -->
                         <td> <?php echo date("d/m/Y", strtotime($emp["register_date"])); ?> </td>
+                        <td> <?php echo $emp["bio"]; ?> </td>
 
                         <td> 
                             <div class="row">

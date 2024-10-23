@@ -105,6 +105,15 @@
             return $statement->fetchAll(); //retorna em formato de array
         } 
 
+        public function getInfoByName($table, $name){
+            $pdo = parent::getInstance();
+            $sql = "SELECT * FROM $table WHERE name = :name";
+            $statement = $pdo->prepare($sql);
+            $statement->bindValue(":name", $name);
+            $statement->execute();
+            return $statement->fetchAll(PDO::FETCH_ASSOC); //retorna em formato de array
+        } 
+
         public function update($table, $data, $id){
             $pdo = parent::getInstance();
             $novosValores = "";
@@ -132,6 +141,18 @@
             $sql = "INSERT INTO bets(user_id, game_id, bet_amount, result) VALUES ($user_id, $game_id, $bet_amount, '$result')";
            
             $statement = $pdo->prepare($sql);
+            $statement->execute();
+        }
+    
+    
+        public function updateBalance($table, $valor, $id){
+            $pdo = parent::getInstance();
+
+            $sql = "UPDATE $table SET balance = $valor WHERE id = :id";
+            
+            $statement = $pdo->prepare($sql);
+
+            $statement->bindValue(":id", $id);
             $statement->execute();
         }
     }

@@ -32,14 +32,13 @@ include_once('header.php');
                 </div>
             </div>
         </div>
+
         <div class="col-md-4 col-sm-12 col-xs-12 pt-3 centro">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../../assets/img/comingsoon.png" alt="Card image cap">
+                <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                     <div class="centro">
-                        <form action="games/MMVerificacao.php">
                             <a href="#"><button class="play-btn">Play!</button></a>
-                        </form>   
                     </div>
                 </div>
             </div>
@@ -47,9 +46,8 @@ include_once('header.php');
 
         <div class="col-md-4 col-sm-12 col-xs-12 pt-3 centro">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../../assets/img/comingsoon.png" alt="Card image cap">
+                <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
-                    <h1></h1>
 
                     <div class="centro">
                         <a href="#"> <button class="play-btn">Play!</button></a>
