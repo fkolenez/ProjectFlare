@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt-br">
-
+<?php
+    session_start();
+?>
 <head>
 
     <script src="https://kit.fontawesome.com/4eb7eb63c7.js" crossorigin="anonymous"></script>
@@ -65,6 +67,14 @@
                     <a href="register.php">Registre-se</a>
                 </div>
         
+                    <?php if(isset($_SESSION['msg_error']) && !empty($_SESSION['msg_error'])){?>
+                        <div class="alert alert-danger mt-3" id="alert"><?php echo $_SESSION['msg_error'];?> </div>
+                    <?php } ?> 
+
+                    <?php if(isset($_SESSION['msg_success']) && !empty($_SESSION['msg_success'])){?>
+                        <div class="alert alert-danger mt-3" id="alert"><?php echo $_SESSION['msg_success'];?> </div>
+                    <?php } ?> 
+
                 <div class="icons">
                     <i class="fa-brands fa-google"></i>
                     <i class="fa-brands fa-facebook"></i>
@@ -80,3 +90,12 @@
 <?php
     include_once("footer.php");
 ?>
+
+
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $("#alerta").hide("slow");
+        }, 3000);
+    });
+</script>

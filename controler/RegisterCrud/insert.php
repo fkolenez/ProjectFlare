@@ -6,8 +6,6 @@ $Entity = new Entity();
 $data = $_POST;
 $vetor = $Entity->getInfoByName("users", $_POST['name']);
 
-echo count($vetor);
-
 if (count($vetor) > 0) { // tem o registro no banco
     $_SESSION["msg_error"] = "Nome de usuario já cadastrado";
     header('Location: ../../view/pages/register.php');
