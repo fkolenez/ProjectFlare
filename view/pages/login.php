@@ -68,11 +68,11 @@
                 </div>
         
                     <?php if(isset($_SESSION['msg_error']) && !empty($_SESSION['msg_error'])){?>
-                        <div class="alert alert-danger mt-3" id="alert"><?php echo $_SESSION['msg_error'];?> </div>
+                        <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_error'];?> </div>
                     <?php } ?> 
 
                     <?php if(isset($_SESSION['msg_success']) && !empty($_SESSION['msg_success'])){?>
-                        <div class="alert alert-danger mt-3" id="alert"><?php echo $_SESSION['msg_success'];?> </div>
+                        <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_success'];?> </div>
                     <?php } ?> 
 
                 <div class="icons">
