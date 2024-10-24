@@ -13,10 +13,6 @@
     <form action="../../controler/logout/logout.php" method="post">
         <button class="btn btn-success" type="submit">logout</button>
     </form>
-
-    <?php
-        echo $_SESSION['id'];
-    ?>
 </div>
 
 <script>

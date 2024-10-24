@@ -1,5 +1,5 @@
 body,html{
-    background-color: #21222C;
+    background-color: #18002C;
     padding: 0px;
     margin: 0px;
     height: 100vh;
@@ -26,7 +26,8 @@ a:hover{
     font-weight: bold !important;
 }
 .bg-vaga-nav{
-    background: #17181E!important;
+    background: #18002C!important;
+    border-bottom: #8255A8 solid 1px;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #FFFFFF !important;
@@ -252,13 +253,11 @@ h5{
 
 .perfil-card{
     display: flex;
-    align-items: center;
     flex-direction: column;
     background-color: #17181E;
     border-radius: 7px;
     height: 80vh;
     width: 100vw;
-
 }
 
 .imagem-perfil{
@@ -267,15 +266,8 @@ h5{
     background-color: #444444;
     border-radius: 50%;
     margin: 40px;
-}
-
-.sei{
-    width: 100%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    margin-bottom: 20%;
-
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border: #381853 solid 3px;
 }
 
 .centro{
@@ -284,28 +276,39 @@ h5{
     align-items: center;
     justify-content: center;
     font-size:100%;
-    
 }
 
 .perfil-item{
     padding: 1%;
     display: flex;
     width: 80%;
-    background-color: #17181E;
-    font-size: 100%;
-    justify-content: start;
-    align-items: center;
-    font-family: 'Dela Gothic One', sans-serif;
-    font-weight: 700;
-    
-
-}
-.ab{
     height: 50px;
+    background-color: #200a33;
+    font-size: 100%;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.rowButtons{
+    display: flex;
+    justify-content: start !important;
+}
+
+
+.corFundoRow1{
+    background-color: #220838;
+    border-radius: 25px 25px 0 0;
+    border-bottom: #8255A8 solid 1px;
+}
+
+.corFundoRow2{
+    border-radius: 0px 0px 25px 25px;
+    background-color: #2e0c49;
 }
 
 .username{
-    background-color: #444444;
-    border-radius: 10px;
-    margin-left: 5%;
+    font-weight: 700 bold;
+    
 }

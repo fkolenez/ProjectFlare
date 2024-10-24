@@ -7,8 +7,7 @@
     $data = $_POST;
 
     if(isset($id) && !empty($id)){
-
-        // deleta do banco
+        
         try{
             $Entity->update("users", $data, $id);
             $_SESSION["msg"] = "Atualizado com sucesso";

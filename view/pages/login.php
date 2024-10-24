@@ -65,14 +65,13 @@
         
                 <div class="text-center">
                     <a href="register.php">Registre-se</a>
-                </div>
-        
+                </div>        
                     <?php if(isset($_SESSION['msg_error']) && !empty($_SESSION['msg_error'])){?>
                         <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_error'];?> </div>
                     <?php } ?> 
 
                     <?php if(isset($_SESSION['msg_success']) && !empty($_SESSION['msg_success'])){?>
-                        <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_success'];?> </div>
+                        <div class="alert alert-success mt-3" id="alerta"><?php echo $_SESSION['msg_success']; ?> </div>
                     <?php } ?> 
 
                 <div class="icons">
@@ -96,6 +95,6 @@
     $(document).ready(function(){
         setTimeout(function(){
             $("#alerta").hide("slow");
-        }, 3000);
+        }, 2000);
     });
 </script>

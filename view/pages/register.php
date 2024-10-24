@@ -79,10 +79,6 @@
                         <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_error'];?> </div>
                     <?php } ?> 
 
-                    <?php if(isset($_SESSION['msg_success']) && !empty($_SESSION['msg_success'])){?>
-                        <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_success'];?> </div>
-                    <?php } ?> 
-
                 <div class="icons">
                     <i class="fa-brands fa-google"></i>
                     <i class="fa-brands fa-facebook"></i>
