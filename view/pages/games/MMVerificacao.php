@@ -13,16 +13,14 @@
 
     $rand = rand(1 ,3);
 
-    echo $carteira;
+    if($bet < 1 or $bet > $carteira){
 
-    if($carteira < 0){
-        echo $carteira;
-
-        $_SESSION['negativo'] = 'Saldo negativo!';
+        $_SESSION['invalido'] = 'Sua aposta é maior que seu saldo!';
         header('Location: ../MonkeyMoney.php');
         exit();
 
     }
+
     if (!isset($_SESSION['loseWin'])) {
         $_SESSION['loseWin'] = '';
     }
@@ -47,7 +45,4 @@
 
     header('Location: ../MonkeyMoney.php');
     exit();
-
-    echo "<br><br>numero aleatorio = ".$rand;
-    echo "<br><br>botao escolhido = ".$corBotao;
 ?>

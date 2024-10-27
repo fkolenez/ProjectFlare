@@ -1,13 +1,9 @@
 <?php
     include_once("header.php");
-    // tem q fazer essa pagina
 ?>
-<div class="container">
-    <br><br><br><br><br>
 
-    <div class="alert alert-success" id="alert">
-        <p>Login efetuado com sucesso!</p>
-    </div>
+<div class="container p-5">
+
 
 
     <form action="../../controler/logout/logout.php" method="post">

@@ -17,26 +17,23 @@
         background-color: #15ff0025;
         color: #CCC;
     }
+
+    .espacoTopHistorico{
+        padding-top: 30px;
+    }
+
 </style>
-<div class="container espacoTop">
-    <h2>Historico:</h2>
 
-    <div class="text-right">
-        <a href="inicio.php" class="btn btn-outline-primary">
-            <i class="fas fa-file-alt" style="font-size:24px"></i>
-        </a>
-    </div>
-
-    <br>
-
+<div class="container espacoTopHistorico">
+    <h2  class="mb-3">Historico:</h2>
     <div class="table-reponsive">
 
         <table id="idTable" class="table mt-3 table-striped table-berdered">
             <thead>
                 <tr>
-                    <th>Aposta</th>
-                    <th>Resultado</th>
-                    <th>Jogo</th>
+                    <th class="text-center">Aposta</th>
+                    <th class="text-center">Resultado</th>
+                    <th  class="text-center">Jogo</th>
                 </tr>
             </thead>
 
@@ -44,18 +41,18 @@
  
     foreach ($Entity->listBets("bets", $_SESSION['id']) as $b) { ?>
         <tr>
-            <td class="centro"><?php echo $b["bet_amount"]; ?></td>
+            <td  class="text-center"><?php echo $b["bet_amount"]; ?></td>
 
         <?php    
             if($b["result"] == 'Você perdeu'){
         ?>
-            <td class="vermelho">Perdeu</td>
+            <td class="vermelho text-center">Perdeu</td>
         <?php } else { ?>
-            <td class="verde">Ganhou</td>
+            <td class="verde text-center">Ganhou</td>
             
             <?php }
                 foreach ($Entity->listGames("games",  $b["game_id"]) as $c) { ?>
-                <td><?php echo $c["name"]; ?></td>
+                <td  class="text-center"><?php echo $c["name"]; ?></td>
             <?php } ?>
     <?php
     }

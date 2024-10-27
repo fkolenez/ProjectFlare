@@ -46,6 +46,18 @@
                         value="<?=$emp['profile']?>"
                         required/>
                     </div>
+
+                    
+                    <div class="form-group">
+                        <label>Alterar bio:</label>
+                        <input type="text" 
+                        class="form-control" 
+                        placeholder="Digite sua nova bio" 
+                        name="bio" 
+                        value="<?=$emp['bio']?>"
+                        required/>
+                    </div>
+                  
                   
                     <div class="form-group">
                         <label>Alterar data de cadastro:</label>

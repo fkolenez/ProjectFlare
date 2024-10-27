@@ -4,13 +4,9 @@
     session_start();
 ?>
 <head>
-
-    <script src="https://kit.fontawesome.com/4eb7eb63c7.js" crossorigin="anonymous"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,10 +19,8 @@
 
     <!-- Fontawesome 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
-    <!-- GoogleFonts - OpenSans -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4eb7eb63c7.js" crossorigin="anonymous"></script>
 
     <!-- CSS Personalizado-->
     <link rel="stylesheet" href="../../assets/css/login.css" />

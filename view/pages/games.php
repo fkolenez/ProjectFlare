@@ -12,12 +12,18 @@ include_once('header.php');
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 420px;
+        height: 300px;
     }
 </style>
 
-<div class="container espacoTop">
-    <div class="row ">
+<div class="container espacoTop"> 
+    
+        <div class="d-flex justify-content-start">
+            <h5 class="mb-5">JOGOS POPULARES</h5>
+        </div>
+    <div class="row">
+       
+
         <div class="col-md-4 col-sm-12 col-xs-12 pt-3 centro">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="../../assets/img/macaco.jpeg" alt="Card image cap">
