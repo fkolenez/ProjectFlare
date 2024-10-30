@@ -5,8 +5,8 @@
         $empEntity = new Entity();
         $id = $_POST["id"];
 ?>
-<div class="container espacoTop"><!-- Corpo do sistema -->
 
+<div class="container espacoTop"><!-- Corpo do sistema -->
     <h2 class="text-center">Alterar dados: </h2>
 
     <form method="post" action="../../controler/RegisterCrud/update.php">

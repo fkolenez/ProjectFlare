@@ -29,23 +29,25 @@ $vetor = $list->getInfo("users", $idLoggedUser);
     <div class="row rowBaixo">
         <div class="rowInformacoes">
             <div class="username">Username:<?php echo $vetor[0]["name"]; ?></div>
+            <div>Profile: <?php echo $vetor[0]["profile"]; ?> </div>
 
             <div>R$: <?php echo $vetor[0]["balance"] ?> </div>
 
-            <div>Profile: <?php echo $vetor[0]["profile"]; ?> </div>
 
             <div>Bio: <?php echo $vetor[0]["bio"]; ?>
             </div>
         </div>
 
-        <div class="rowButtons">
-            <form action="../../controler/logout/logout.php" method="post">
-                <button class="" type="submit">logout</button>
+        <div class="rowButtons pt-1">
+            <form action="../../controler/logout/logout.php" method="post" class="pr-3">
+                <button class="btn btn-outline-danger" type="submit">Logout</button>
             </form>
-        
-               <form action="../../controler/logout/logout.php" method="post">
-                <button class="btn btn-success" type="submit">logout</button>
+
+            <form action="updatePerfil.php" method="post" class="pr-3">
+                <button class="btn btn-outline-success" type="submit">Alterar perfil</button>
             </form>
+
+            <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" id="exampleModal" type="submit">Excluir conta</button>
         </div>
     </div>
 </div>

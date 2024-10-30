@@ -13,13 +13,16 @@
             $statement->execute();
 
             $vetor = $statement->fetchAll();
+            echo "1";
 
             // ve se achou o registro no banco
             if(count($vetor) > 0) {
-                
+                echo "2";
+
                 // compara se a senha informou 
                 // é a mesma do banco, q agr ta hashada
                 if(password_verify($password, $vetor[0]['password'])){
+                    echo "3";
 
                     // aqui cria a sessão
                     // redireciona se o usuário for encontrado

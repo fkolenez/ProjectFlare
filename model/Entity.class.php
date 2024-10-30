@@ -80,7 +80,6 @@
                 }
 
                 $statement->bindValue(":$key", $value,PDO::PARAM_STR);
-            
             }
 
             $statement->execute();
