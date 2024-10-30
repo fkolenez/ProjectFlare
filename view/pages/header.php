@@ -89,7 +89,7 @@ if (!isset($_SESSION['user'])) {
 					</ul>
 				</div>
 
-				<div class="text-white">
+				<div class="text-white textNavBar">
 					R$: <?php echo $vetor[0]["balance"] ?>
 				</div>
 			</div>
