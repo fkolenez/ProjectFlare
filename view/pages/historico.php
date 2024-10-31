@@ -23,6 +23,12 @@
     }
 
 </style>
+<div class="text-right">      
+        <a href="relatorio.php" target="_blank" title="Relatório" class="btn btn-outline-primary">
+            <i class='fas fa-file-alt' style='font-size:24px'></i>
+            Relatório
+        </a>
+   </div>
 
 <div class="container espacoTopHistorico">
     <h2  class="mb-3">Historico:</h2>
