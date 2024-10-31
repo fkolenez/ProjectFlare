@@ -59,14 +59,20 @@
         
                 <div class="text-center">
                     <a href="register.php">Registre-se</a>
-                </div>        
+                </div>   
+
                     <?php if(isset($_SESSION['msg_error']) && !empty($_SESSION['msg_error'])){?>
                         <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_error'];?> </div>
-                    <?php } ?> 
+                    <?php }unset( $_SESSION['msg_error']); ?> 
 
                     <?php if(isset($_SESSION['msg_success']) && !empty($_SESSION['msg_success'])){?>
                         <div class="alert alert-success mt-3" id="alerta"><?php echo $_SESSION['msg_success']; ?> </div>
-                    <?php } ?> 
+                    <?php } unset( $_SESSION['msg_sucess']);?> 
+
+                    <?php if(isset($_SESSION['msg_delete']) && !empty($_SESSION['msg_delete'])){?>
+                        <div class="alert alert-success mt-3" id="alerta"><?php echo $_SESSION['msg_delete']; ?> </div>
+                    <?php } unset( $_SESSION['msg_delete']);?> 
+
 
                 <div class="icons">
                     <i class="fa-brands fa-google"></i>

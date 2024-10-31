@@ -68,15 +68,9 @@
 
                 <a href="login.php">Já possui login?</a>
 
-                <a href="#">Esqueceu sua senha?<br></a>
-                
-                <div class="text-center">
-                    <a href="register.php">Registre-se</a>
-                </div>
-
                     <?php if(isset($_SESSION['msg_error']) && !empty($_SESSION['msg_error'])){?>
                         <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_error'];?> </div>
-                    <?php } ?> 
+                    <?php } unset( $_SESSION['msg_error']);?> 
 
                 <div class="icons">
                     <i class="fa-brands fa-google"></i>
