@@ -1,4 +1,6 @@
 <?php
+    session_destroy(); 
+
     session_start();
     include_once '../../model/Conexao.class.php';
     include_once '../../model/Entity.class.php';
@@ -12,7 +14,7 @@
         try {
             echo "3";
             $Entity->delete("users", $idLoggedUser);
-            $_SESSION["msg_delete"] = "Deletado com sucesso";
+            $_SESSION["msg_success"] = "Deletado com sucesso";
         } catch (Exception $e) {
             $_SESSION["msg_error"] = "$e";
         }

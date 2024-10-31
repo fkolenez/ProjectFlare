@@ -37,12 +37,18 @@
     <title>Flare Project</title>
 </head>
 
+<style>
+    .vtnc{
+        font-family: 'Dela Gothic One', sans-serif;
+    }
+</style>
+
 <body class="gradient-custom">
     <div class="flex-container">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="loginBox col-md-">
-            <h1 class="display-4 text-center"><b>FLARE</b></h1>
+                <h1 class="display-4 text-center vtnc"><b>FLARE</b></h1>
                 <h3><b>Login</b></h3>
                 <form action="../../controler/auth/auth.php" method="post">
                     <div class="form-group">
@@ -63,15 +69,11 @@
 
                     <?php if(isset($_SESSION['msg_error']) && !empty($_SESSION['msg_error'])){?>
                         <div class="alert alert-danger mt-3" id="alerta"><?php echo $_SESSION['msg_error'];?> </div>
-                    <?php }unset( $_SESSION['msg_error']); ?> 
+                    <?php }unset($_SESSION['msg_error']); ?> 
 
                     <?php if(isset($_SESSION['msg_success']) && !empty($_SESSION['msg_success'])){?>
                         <div class="alert alert-success mt-3" id="alerta"><?php echo $_SESSION['msg_success']; ?> </div>
-                    <?php } unset( $_SESSION['msg_sucess']);?> 
-
-                    <?php if(isset($_SESSION['msg_delete']) && !empty($_SESSION['msg_delete'])){?>
-                        <div class="alert alert-success mt-3" id="alerta"><?php echo $_SESSION['msg_delete']; ?> </div>
-                    <?php } unset( $_SESSION['msg_delete']);?> 
+                    <?php } unset($_SESSION['msg_sucess']);?> 
 
 
                 <div class="icons">
