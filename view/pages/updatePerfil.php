@@ -51,8 +51,10 @@ include_once("header.php");
                 <button class="btn btn-outline-primary btn-lg">
                     <i class='fas fa-cloud-upload-alt' style='font-size:24px'></i> Inserir
                 </button>
-                <a href="listagem.php" class="btn btn-outline-primary btn-lg">
-                    <i class='fas fa-reply-all' style='font-size:24px'></i> Voltar</a>
+
+                <a href="perfil.php" class="btn btn-outline-primary btn-lg">
+                    <i class='fas fa-reply-all' style='font-size:24px'></i> Voltar
+                </a>
             </div>
         </div>
     </div>

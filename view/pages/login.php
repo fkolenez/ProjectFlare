@@ -74,7 +74,10 @@
                     <?php if(isset($_SESSION['msg_success']) && !empty($_SESSION['msg_success'])){?>
                         <div class="alert alert-success mt-3" id="alerta"><?php echo $_SESSION['msg_success']; ?> </div>
                     <?php } unset($_SESSION['msg_sucess']);?> 
-
+                    
+                    <?php if(isset($_SESSION['msg']) && !empty($_SESSION['msg'])){?>
+                        <div class="alert alert-success mt-3" id="alerta"><?php echo $_SESSION['msg']; ?> </div>
+                    <?php } unset($_SESSION['msg']);?> 
 
                 <div class="icons">
                     <i class="fa-brands fa-google"></i>

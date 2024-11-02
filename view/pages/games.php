@@ -2,64 +2,41 @@
 include_once('header.php');
 ?>
 
-<style>
-    .centro {
-        display: flex;
-        justify-content: center;
-    }
+<div class="container espacoTop">
 
-    .card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-    }
-</style>
-
-<div class="container espacoTop"> 
-    
-        <div class="d-flex justify-content-start">
-            <h5 class="mb-5">JOGOS POPULARES</h5>
-        </div>
+    <div class="d-flex justify-content-start">
+        <h2 class="mb-3">JOGOS POPULARES</h2>
+    </div>
     <div class="row">
-       
-
         <div class="col-md-4 col-sm-12 col-xs-12 pt-3 centro">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../../assets/img/macaco.jpeg" alt="Card image cap">
-                <div class="card-body">
-                    <div class="centro">
-                        <h4>MONKEY MONEY</h4>
-                    </div>
+            <div class="CardGame" style="width: 18rem;">
+                <img class="card-img-top tamanhoImagemGames" src="../../assets/img/monkeymoney.png">
 
-                    <div class="centro">
-                       <a href="MonkeyMoney.php"> <button class="play-btn">Play!</button></a>
-                    </div>
+                <div class="cardBody">
+                    <a href="MonkeyMoney.php" class="w-100 d-flex justify-content-center"> <button class="play-btn w-100">Play!</button></a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12 pt-3 centro">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <div class="centro">
-                            <a href="#"><button class="play-btn">Play!</button></a>
-                    </div>
+            <div class="CardGame" style="width: 18rem;">
+                <img class="card-img-top tamanhoImagemGames" src="../../assets/img/leao.png">
+
+                <div class="cardBody">
+                    <a href="#" class="w-100 d-flex justify-content-center"> <button class="play-btn w-100">Em breve!</button></a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12 pt-3 centro">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
+            <div class="CardGame" style="width: 18rem;">
+                <img class="card-img-top tamanhoImagemGames" src="../../assets/img/luckInMagic.png">
 
-                    <div class="centro">
-                        <a href="#"> <button class="play-btn">Play!</button></a>
-                    </div>
+                <div class="cardBody">
+                    <a href="#" class="w-100 d-flex justify-content-center"> <button class="play-btn w-100">Em breve!</button></a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>

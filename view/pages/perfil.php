@@ -23,7 +23,9 @@ $vetor = $list->getInfo("users", $idLoggedUser);
     </div>
 
     <div class="meio">
-        <div class="imagem-perfil"></div>
+    <div class="imagem-perfil d-flex justify-content-center align-items-center"><i
+                class="fa fa-user tamanhoIcon"></i>
+            </div>
     </div>
 
     <div class="row rowBaixo">

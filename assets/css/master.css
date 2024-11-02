@@ -59,7 +59,7 @@ a:hover{
     height: 40px;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -213,12 +213,11 @@ h5{
 .imagem-perfil{
     width: 250px;
     height: 250px;
-    background-color: #444444;
+    background-color: #381853;
     border-radius: 50%;
     margin: 40px;
-    border: #381853 solid 5px;
+    border: #8255A8 solid 1px;
     box-shadow: 0px -4px 45px -7px rgba(0,0,0,0.75);
-
 }
 
 .centroContainer{
@@ -283,7 +282,6 @@ h5{
     transition: color 0.2s ease, transform 0.3s ease;
 }
 
-
 .flareText:hover{
     font-size: 24px;
     font-weight: 800;
@@ -302,7 +300,44 @@ h5{
     transform: translateY(-3px);
 }
 
+.CardGame {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.CardGame:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px #7a3ab9;
+}
+
+.tamanhoImagemGames {
+    border-radius: 12px 12px 0px 0px;
+    height: 295px !important;
+    width: 288px;
+}
+
+.botaoPerfil{
+    color: #ad73da;
+    background-color: transparent;
+    background-image: none;
+    border-color: #8F00FF;
+}
+
+.botaoPerfil:hover{
+    background-color: #8F00FF ;
+}
+
+.z{
+    color: #8255A8;
+    font-size: 150px;
+}
+
 .amg{
-            height: 600px;
-            
+    height: 600px;      
+}
+
+.tamanhoIcon{
+    font-size: 150px;
+    color: #888;
 }
