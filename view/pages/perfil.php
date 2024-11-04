@@ -9,28 +9,30 @@ $idLoggedUser = $_SESSION['id'];
 $list = new Entity();
 
 $vetor = $list->getInfo("users", $idLoggedUser);
+
+$_SESSION['name'] = $vetor[0]["name"]; 
+
 ?>
 
 <link rel="stylesheet" href="../../assets/css/master.css" />
 <br>
+
 <div class="centro pt-5 mt-2 mb-2">
     <h1>Olá, <?php echo $vetor[0]["name"]; ?></h1>
 </div>
 
 <div class="container centroContainer">
-    <div class="row rowCima">
-
-    </div>
+    <div class="row rowCima"></div>
 
     <div class="meio">
-    <div class="imagem-perfil d-flex justify-content-center align-items-center"><i
-                class="fa fa-user tamanhoIcon"></i>
+    <div class="imagem-perfil d-flex justify-content-center align-items-center">
+        <i class="fa fa-user tamanhoIcon"></i>
             </div>
     </div>
 
     <div class="row rowBaixo">
         <div class="rowInformacoes">
-            <div class="username">Username:<?php echo $vetor[0]["name"]; ?></div>
+            <div class="username">Username:<?php echo $vetor[0]["name"];?></div>
             <div>Profile: <?php echo $vetor[0]["profile"]; ?> </div>
 
             <div>R$: <?php echo $vetor[0]["balance"] ?> </div>
@@ -40,23 +42,24 @@ $vetor = $list->getInfo("users", $idLoggedUser);
             </div>
         </div>
 
-        <div class="rowButtons pt-1">
-            <form action="../../controler/logout/logout.php" method="post" class="pr-3">
-                <button class="btn btn-outline-danger" type="submit">Logout</button>
-            </form>
+        <div class="row d-flex justify-content-around pt-5">
+            <div class="col-md-3 col-sm-12 d-flex justify-content-center w-3">
+                <a href="../../controler/logout/logout.php"><button class="btn btn-outline-danger" type="submit">Logout</button></a> 
+            </div>
+                
+            <div class="col-md-3  col-sm-12 d-flex justify-content-center">
+                <a href="updatePerfil.php"><button class="btn btn-outline-success" type="submit">Alterar perfil</button></a>
+            </div>
 
-            <form action="updatePerfil.php" method="post" class="pr-3">
-                <button class="btn btn-outline-success" type="submit">Alterar perfil</button>
-            </form>
-
-            <div class="pr-3">
+            <div class="col-md-3 col-sm-12 d-flex justify-content-center">
                 <a href="historico.php"><button class="btn btn-outline-info color-info">Historico</button></a>
             </div>
 
-            <div class="pr-3">
+            <div class="col-md-3 col-sm-12 d-flex justify-content-center">
+                <a href="#">
                 <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
                     Excluir conta
-                </button>
+                </button></a>
             </div>
             
             <!-- Modal -->
@@ -78,7 +81,6 @@ $vetor = $list->getInfo("users", $idLoggedUser);
                     </div>
                 </div>
             </div>
-
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         </div>
     </div>

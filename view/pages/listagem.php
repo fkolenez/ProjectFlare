@@ -11,6 +11,12 @@ $empEntity = new Entity();
 // Cria uma instancia (objeto) da classe Entity;
 // Ele pode acessar os metodos da classe
 ?>
+<style>
+    .espacoTop{
+        padding-top: 12vh;
+    }
+</style>
+
 <div class="container espacoTop">
     <h2>Usúarios:</h2>
 

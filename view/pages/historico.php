@@ -5,6 +5,7 @@
      include_once("../../model/Conexao.class.php");
      include_once("../../model/Entity.class.php");
      $Entity = new Entity();
+     
 ?>
 
 <style>         
@@ -23,15 +24,10 @@
     }
 
 </style>
-<div class="text-right">      
-        <a href="relatorio.php" target="_blank" title="Relatório" class="btn btn-outline-primary">
-            <i class='fas fa-file-alt' style='font-size:24px'></i>
-            Relatório
-        </a>
-   </div>
 
 <div class="container espacoTopHistorico">
-    <h2  class="mb-3">Historico:</h2>
+
+<h2  class="mb-3">Historico:</h2>
     <div class="table-reponsive">
 
         <table id="idTable" class="table mt-3 table-striped table-berdered">
@@ -63,3 +59,11 @@
     <?php
     }
 ?>
+
+<div class="text-right">      
+        <a href="relatorio.php" target="_blank" title="Relatório" class="btn btn-outline-primary">
+            <i class='fas fa-file-alt' style='font-size:24px'></i>
+            Relatório
+        </a>
+   </div>
+</div>

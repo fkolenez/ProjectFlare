@@ -6,8 +6,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,6 +39,10 @@
 <style>
     .vtnc{
         font-family: 'Dela Gothic One', sans-serif;
+        font-weight: bolder;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: 3.5rem;
     }
 </style>
 
@@ -48,7 +51,7 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="loginBox col-md-">
-                <h1 class="display-4 text-center vtnc"><b>FLARE</b></h1>
+                <h1 class="display-4 text-center"><b>FLARE</b></h1>
                 <h3><b>Login</b></h3>
                 <form action="../../controler/auth/auth.php" method="post">
                     <div class="form-group">
@@ -94,7 +97,6 @@
 <?php
     include_once("footer.php");
 ?>
-
 
 <script>
     $(document).ready(function(){

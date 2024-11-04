@@ -5,22 +5,22 @@ include_once("../../model/Conexao.class.php");
 include_once("../../model/Entity.class.php");
 $Entity = new Entity();
 
+$idLoggedUser = $_SESSION['id'];
+$nameLoggedUser = $_SESSION['name'];
 
 require('fpdf/fpdf.php'); // Certifique-se de ter a biblioteca FPDF instalada (composer require fpdf/fpdf)
 //Vejam a documentação para montar e modificar layout diferente 
 //http://www.fpdf.org/en/doc/index.php
 
 
-$result = $Entity->list("bets");
-
+$result = $Entity->listBets("bets", $idLoggedUser);
 
 // Criação do PDF
 $pdf = new FPDF();
 $pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(0,10,'Monkey Money
-',0,1,'C');  // Título centralizado
-
+$pdf->SetFont('Arial','B',12);
+$pdf->Cell(0,10,'Jogo: Monkey Money',0,1,'C');  // Título centralizado
+$pdf->Cell(0,10, 'Nome do usuario:'.$nameLoggedUser,0,1, 'C');
 
 // Cabeçalho formato de tabela (adapte para suas colunas)
 //$pdf->SetFont('Arial','B',12);
@@ -29,8 +29,6 @@ $pdf->Cell(0,10,'Monkey Money
 //$pdf->Cell(50,10,'data',1,1,'C');  // 1 para borda, 1 para nova linha
 
 // Dados da tabela
-
-$pdf->SetFont('Arial','',12);
 if (count($result) > 0) {
     foreach($result as $row)  {
         $bet_amount = mb_convert_encoding($row["bet_amount"], 'UTF-8'); 
@@ -43,6 +41,7 @@ if (count($result) > 0) {
       
         $pdf->Cell(0,10,$bet_amount,0,1,'C');  // Título centralizado
         $pdf->Cell(0,10,$result,1,0,'C'); //1 é a borda
+        
 
         $pdf->Cell(0,10,"",1,1,'C');  // Pula linha
         $pdf->Cell(0,10,"",0,1,'C');  // Pula linha            
@@ -52,10 +51,7 @@ if (count($result) > 0) {
     $pdf->Cell(0,10,'Nenhum resultado encontrado.',1,1,'C');
 }
 
-// Gera o PDF (I: abre no navegador, D: força download, F: salva em arquivo)
-$pdf->Output('relatorio.pdf', 'I');
-ob_end_flush(); // Envia o buffer (incluindo o PDF)
-
-
-
+    // Gera o PDF (I: abre no navegador, D: força download, F: salva em arquivo)
+    $pdf->Output('relatorio.pdf', 'I');
+    ob_end_flush(); // Envia o buffer (incluindo o PDF)
 ?>
