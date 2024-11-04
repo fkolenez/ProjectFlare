@@ -234,7 +234,7 @@ h5{
 
 .rowCima{
     height: 200px;
-    width: 70%;
+    width: 75%;
     background-color: #8f00ff;
     border-radius: 15px 15px 0px 0px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -243,8 +243,8 @@ h5{
 
 .rowBaixo{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    height: 350px;
-    width: 70%;
+    height: 400px;
+    width: 75%;
     background-color: #381853;
     border-radius: 0px 0px 15px 15px;
     display: flex;
@@ -275,6 +275,7 @@ h5{
     justify-content: start;
     flex-direction: row;
 }
+
 
 .flareText{
     font-size: 24px;
@@ -339,5 +340,17 @@ h5{
 
 .tamanhoIcon{
     font-size: 150px;
-    color: #888;
+    color: #8255A8;
+}
+
+@media (max-width: 800px) {
+    .rowInformacoes{
+        display: flex;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; /* Botões ocupando toda a largura */
+        margin-bottom: 10px;
+    }
 }
