@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     balance DECIMAL(10, 2) NOT NULL,
     profile VARCHAR(255),
     password VARCHAR(255) NOT NULL,
-    bio, VARCHAR(255) NOT NULL,
+    bio VARCHAR(255) NOT NULL,
     register_date DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
