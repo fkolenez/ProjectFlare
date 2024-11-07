@@ -117,12 +117,14 @@ a:hover{
     height: 8vh;
     width: 100%;
     background-color: #8F00FF;
+    color: #ffffff;
     font-weight: 800;
 }
 .botaoBet2{
     height: 8vh;
     width: 100%;
     background-color: #8255A8;
+    color: #ffffff;
     font-weight: 800;
 }
 
@@ -358,6 +360,70 @@ h5{
 .qmsomos {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    background-color: #260046;
+
+}
+.titulo1{
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+}
+.titulo2{
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flaviofoto{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #44475A;
+    margin: 20px;
+}
+.qmsomos2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    background-color: #260046;
+}
+.espacoTop2{
+    padding-top: 15vh;
+}
+.qmdesc1{
+    font-size: 20px;
+    margin-left: 10vw;
+}
+.qmdesc2{
+    font-size: 20px;
+    margin-right: 10vw;
+}
+.tamanhoIcon2{
+    font-size: 90px;
+    color: #9c9c9c;
+    margin: 15%;
+    padding: 5%
+}
+
+.BtnSuccess {
+    color:#ffffff;
+    border-color: #8255A8;
+}
+
+.BtnDanger {
+    color:#ffffff;
+    border-color: #8255A8;
+}
+
+.BtnWarning {
+    color:#ffffff;
+    border-color: #8255A8;
+}
+.BtnWarning :hover{
+    color:#ffffff;
 }

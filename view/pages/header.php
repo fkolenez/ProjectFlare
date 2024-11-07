@@ -85,6 +85,10 @@ if (!isset($_SESSION['user'])) {
 						<li class="nav-item active">
 							<a class="nav-link textNavBar nb3" href="perfil.php">PERFIL</a>
 						</li>
+
+						<li class="nav-item active">
+							<a class="nav-link textNavBar nb3" href="qmsomos.php">QUEM SOMOS</a>
+						</li>
 					</ul>
 				</div>
 

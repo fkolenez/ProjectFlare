@@ -44,21 +44,21 @@ $_SESSION['name'] = $vetor[0]["name"];
 
         <div class="row d-flex justify-content-around pt-5">
             <div class="col-md-3 col-sm-12 d-flex justify-content-center w-3">
-                <a href="../../controler/logout/logout.php"><button class="btn btn-outline-danger" type="submit">Logout</button></a> 
+                <a href="../../controler/logout/logout.php"><button class="btn btn-outline-danger BtnDanger" type="submit"><strong>Logout</strong></button></a> 
             </div>
                 
             <div class="col-md-3  col-sm-12 d-flex justify-content-center">
-                <a href="updatePerfil.php"><button class="btn btn-outline-success" type="submit">Alterar perfil</button></a>
+                <a href="updatePerfil.php"><button class="btn btn-outline-warning BtnWarning" type="submit"><strong>Alterar perfil</strong></button></a>
             </div>
 
             <div class="col-md-3 col-sm-12 d-flex justify-content-center">
-                <a href="historico.php"><button class="btn btn-outline-info color-info">Historico</button></a>
+                <a href="historico.php"><button class="btn btn-outline-success BtnSuccess"><strong>Historico</strong></button></a>
             </div>
 
             <div class="col-md-3 col-sm-12 d-flex justify-content-center">
                 <a href="#">
-                <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
-                    Excluir conta
+                <button class="btn btn-outline-danger BtnDanger" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
+                    <strong>Excluir conta</strong>
                 </button></a>
             </div>
             

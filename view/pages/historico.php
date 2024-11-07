@@ -27,7 +27,7 @@
 
 <div class="container espacoTopHistorico">
 
-<h2  class="mb-3">Historico:</h2>
+<h1 class="mb-3"><strong>HISTÓRICO</strong></h1>
     <div class="table-reponsive">
 
         <table id="idTable" class="table mt-3 table-striped table-berdered">

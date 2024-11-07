@@ -5,7 +5,7 @@ include_once('header.php');
 <div class="container espacoTop">
 
     <div class="d-flex justify-content-start">
-        <h2 class="mb-3">JOGOS POPULARES</h2>
+        <h1 class="mb-3"><strong>JOGOS POPULARES</strong></h1>
     </div>
     <div class="row">
         <div class="col-md-4 col-sm-12 col-xs-12 pt-3 centro">
