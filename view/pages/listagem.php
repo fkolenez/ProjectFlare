@@ -18,7 +18,7 @@ $empEntity = new Entity();
 </style>
 
 <div class="container espacoTop">
-    <h2>Usúarios:</h2>
+    <h1><strong>USUÁRIOS</strong></h1>
 
     <div class="text-right">
         <a href="register.php" class="btn btn-outline-primary">

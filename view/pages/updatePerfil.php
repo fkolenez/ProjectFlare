@@ -8,7 +8,7 @@ include_once("header.php");
 
 
 <div class="container espacoTop"><!-- Corpo do sistema -->
-    <h2 class="text-center">Alterar dados: </h2>
+    <h1 class="text-center"><strong>ALTERAR DADOS</strong> </h1>
     <form method="post" action="../../controler/PerfilCrud/update.php">
         <div class="container">
             <?php foreach ($empEntity->getInfo("users", $id) as $emp) { ?>

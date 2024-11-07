@@ -117,12 +117,14 @@ a:hover{
     height: 8vh;
     width: 100%;
     background-color: #8F00FF;
+    color: #ffffff;
     font-weight: 800;
 }
 .botaoBet2{
     height: 8vh;
     width: 100%;
     background-color: #8255A8;
+    color: #ffffff;
     font-weight: 800;
 }
 
@@ -360,4 +362,22 @@ h5{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.BtnSuccess {
+    color:#ffffff;
+    border-color: #8255A8;
+}
+
+.BtnDanger {
+    color:#ffffff;
+    border-color: #8255A8;
+}
+
+.BtnWarning {
+    color:#ffffff;
+    border-color: #8255A8;
+}
+.BtnWarning :hover{
+    color:#ffffff;
 }
