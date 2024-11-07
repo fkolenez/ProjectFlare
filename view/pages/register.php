@@ -2,6 +2,12 @@
 <html lang="pt-br">
 <?php
     session_start();
+
+    if (!isset($_SESSION['user']) or $_SESSION['user'] != 'ADM') {
+        session_destroy();
+        header('Location: login.php');
+        die();
+    }
 ?>
 <head>
 

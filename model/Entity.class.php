@@ -75,9 +75,6 @@
             foreach($data as $key => $value) {
 
                 // ta criptografando
-                if($key == 'password'){
-                    $value = password_hash($value, PASSWORD_DEFAULT);
-                }
 
                 $statement->bindValue(":$key", $value,PDO::PARAM_STR);
             }
@@ -89,6 +86,15 @@
         public function delete($table, $id){
             $pdo = parent::getInstance();
             $sql = "DELETE FROM $table WHERE id = :id";
+
+            $statement = $pdo->prepare($sql);
+            $statement->bindValue(":id", $id);
+            $statement->execute();
+        }
+
+        public function deleteByUser($table, $id){
+            $pdo = parent::getInstance();
+            $sql = "DELETE FROM $table WHERE  user_id = :id";
 
             $statement = $pdo->prepare($sql);
             $statement->bindValue(":id", $id);
@@ -142,7 +148,6 @@
             $statement = $pdo->prepare($sql);
             $statement->execute();
         }
-    
     
         public function updateBalance($table, $valor, $id){
             $pdo = parent::getInstance();

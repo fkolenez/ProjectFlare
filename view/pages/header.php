@@ -17,7 +17,6 @@ if (!isset($_SESSION['user'])) {
 	$list = new Entity();
 
 	$vetor = $list->getInfo("users", $idLoggedUser);
-
 ?>
 
 <!doctype html>

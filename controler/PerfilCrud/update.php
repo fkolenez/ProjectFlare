@@ -6,16 +6,7 @@
     $id = $_POST["id"]; 
     $data = $_POST;
 
-
-    // tem q re-hashar a senha
-    foreach($data as $key => $value) {
-        if($key == 'password'){
-            $data[$key] = password_hash($value, PASSWORD_DEFAULT); // Atualiza o array com o valor hashado
-        }
-    }
-
     if(isset($id) && !empty($id)){
-        
         try{
             $Entity->update("users", $data, $id);
             $_SESSION["msg"] = "Atualizado com sucesso";

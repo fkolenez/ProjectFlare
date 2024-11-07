@@ -6,6 +6,8 @@
 
         $name = $_POST["name"];
         $password = $_POST["password"];
+        echo $name.'<br>';
+        echo $password;
 
         // cria uma instância da class auth
         $auth = new Auth();

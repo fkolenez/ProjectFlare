@@ -8,11 +8,9 @@
     $Entity = new Entity();
     $idLoggedUser = $_SESSION['id'];
 
-    echo $idLoggedUser;
-
     if(isset($idLoggedUser) && !empty($idLoggedUser)){
         try {
-            echo "3";
+            $Entity->deleteByUser("bets", $idLoggedUser);
             $Entity->delete("users", $idLoggedUser);
             $_SESSION["msg_success"] = "Deletado com sucesso";
         } catch (Exception $e) {
