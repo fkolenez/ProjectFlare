@@ -26,16 +26,7 @@
         <span class="sr-only">Próximo</span>
       </a>
     </div>
-    <div class="container qmsomos">
-        <h1>Quem somos</h1>
-        <p>Um bando de gerecotinga</p>
-        <h2>Flávio "FKZ"</h2>
-        <p>Gênio Indomável o mais influente no projeto responsavél pelo funcionamento da maior parte do site</p>
-        <h2>Rafael "RAFO"</h2>
-        <p>Empresário, empreendedor e artista o grande responsavel pelos componentes e disposição do site</p>
-        <h2>Emanuel "Santez"</h2>
-        <p>Injustiçado o que tenta mas não incrementa responsavel pricipalmente por detalhes visuais e por responsividade, oprimido por FKZ</p>
-    </div>
+    
 </div>
 
 <script>
